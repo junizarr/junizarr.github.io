@@ -1,0 +1,100 @@
+body {
+    width: 1440px;
+    background-image: url(images/bg-pattern-bottom.svg);
+    background-color: hsl(185, 75%, 39%);
+}
+
+.container {
+    padding: 0;
+    border-radius: 5%;
+    overflow: hidden;
+    margin: 40px auto 20px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.atas {
+    padding: 0;
+    margin: 0;
+    background-image: url(images/bg-pattern-card.svg);
+    background-image: cover;
+    height: 150px;
+
+}
+
+.atas img {
+    width: 100%;
+    overflow: hidden;
+    background-image: cover;
+
+}
+
+.bawah {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: white;
+}
+
+.konten {
+    position: relative;
+    top: -50px;
+}
+
+.konten img {
+    border-radius: 50%;
+    border: 4px solid white;
+    position: relative;
+}
+
+.bawah p {
+    color: hsl(0, 0%, 59%);
+}
+
+span.name {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+.stats {
+    display: flex;
+    margin: -40px auto 10px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.stats p {
+    font-size: 15px;
+}
+
+p span {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+@media (max-width:450px) {
+    body {
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: 90vw;
+        height: 100vh;
+    }
+
+    .atas {
+        border-radius: 10% 10% 0 0;
+    }
+
+    .bawah {
+        border-radius: 0 0 10% 10%;
+    }
+}
